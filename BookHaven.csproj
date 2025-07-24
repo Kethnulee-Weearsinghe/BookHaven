@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23F12054-BF39-4C29-9305-020B92EDE279}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BookHaven</RootNamespace>
+    <AssemblyName>BookHaven</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookHavenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookHavenDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookHavenDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="ManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageUsers.Designer.cs">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageBooks.Designer.cs">
+      <DependentUpon>ManageBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesTransactions.Designer.cs">
+      <DependentUpon>SalesTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBooks.Designer.cs">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesReport.Designer.cs">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesclerkDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesclerkDashboard.Designer.cs">
+      <DependentUpon>SalesclerkDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageCustomers.Designer.cs">
+      <DependentUpon>ManageCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSuppliers.Designer.cs">
+      <DependentUpon>ManageSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageOrders.Designer.cs">
+      <DependentUpon>ManageOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReports.Designer.cs">
+      <DependentUpon>ViewReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageBooks.resx">
+      <DependentUpon>ManageBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageUsers.resx">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesTransactions.resx">
+      <DependentUpon>SalesTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBooks.resx">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReport.resx">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesclerkDashboard.resx">
+      <DependentUpon>SalesclerkDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageCustomers.resx">
+      <DependentUpon>ManageCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSuppliers.resx">
+      <DependentUpon>ManageSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageOrders.resx">
+      <DependentUpon>ManageOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReports.resx">
+      <DependentUpon>ViewReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="BookHavenDataSet.xsc">
+      <DependentUpon>BookHavenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet.xss">
+      <DependentUpon>BookHavenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet1.xsc">
+      <DependentUpon>BookHavenDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet1.xss">
+      <DependentUpon>BookHavenDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet10.xsc">
+      <DependentUpon>BookHavenDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet10.xss">
+      <DependentUpon>BookHavenDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet11.xsc">
+      <DependentUpon>BookHavenDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet11.xss">
+      <DependentUpon>BookHavenDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet12.xsc">
+      <DependentUpon>BookHavenDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet12.xss">
+      <DependentUpon>BookHavenDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet13.xsc">
+      <DependentUpon>BookHavenDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet13.xss">
+      <DependentUpon>BookHavenDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet14.xsc">
+      <DependentUpon>BookHavenDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet14.xss">
+      <DependentUpon>BookHavenDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet15.xsc">
+      <DependentUpon>BookHavenDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet15.xss">
+      <DependentUpon>BookHavenDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet16.xsc">
+      <DependentUpon>BookHavenDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet16.xss">
+      <DependentUpon>BookHavenDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet17.xsc">
+      <DependentUpon>BookHavenDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet17.xss">
+      <DependentUpon>BookHavenDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet2.xsc">
+      <DependentUpon>BookHavenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet2.xss">
+      <DependentUpon>BookHavenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet3.xsc">
+      <DependentUpon>BookHavenDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet3.xss">
+      <DependentUpon>BookHavenDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet4.xsc">
+      <DependentUpon>BookHavenDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet4.xss">
+      <DependentUpon>BookHavenDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet5.xsc">
+      <DependentUpon>BookHavenDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet5.xss">
+      <DependentUpon>BookHavenDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet6.xsc">
+      <DependentUpon>BookHavenDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet6.xss">
+      <DependentUpon>BookHavenDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet7.xsc">
+      <DependentUpon>BookHavenDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet7.xss">
+      <DependentUpon>BookHavenDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet8.xsc">
+      <DependentUpon>BookHavenDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet8.xss">
+      <DependentUpon>BookHavenDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet9.xsc">
+      <DependentUpon>BookHavenDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="BookHavenDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookHavenDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookHavenDataSet9.xss">
+      <DependentUpon>BookHavenDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
