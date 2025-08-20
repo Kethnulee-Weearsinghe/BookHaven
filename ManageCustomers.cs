@@ -14,7 +14,6 @@ namespace BookHaven
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //to clear textboxes
             txtcustomerid.Clear();
             txtcustomernic.Clear();
             cmbtitle.SelectedIndex = -1;
@@ -162,3 +161,4 @@ namespace BookHaven
     }
     
 }
+
