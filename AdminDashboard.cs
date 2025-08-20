@@ -21,9 +21,7 @@ namespace BookHaven
             this.btninventory = new System.Windows.Forms.Button();
             this.btnlogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnmanageusers
-            // 
+            
             this.btnmanageusers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmanageusers.Location = new System.Drawing.Point(80, 185);
             this.btnmanageusers.Name = "btnmanageusers";
@@ -32,9 +30,7 @@ namespace BookHaven
             this.btnmanageusers.Text = "Manage Users";
             this.btnmanageusers.UseVisualStyleBackColor = true;
             this.btnmanageusers.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // btnmanagecustomers
-            // 
+ 
             this.btnmanagecustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmanagecustomers.Location = new System.Drawing.Point(395, 185);
             this.btnmanagecustomers.Name = "btnmanagecustomers";
@@ -43,9 +39,7 @@ namespace BookHaven
             this.btnmanagecustomers.Text = "Manage Customers";
             this.btnmanagecustomers.UseVisualStyleBackColor = true;
             this.btnmanagecustomers.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // btnmanagesuppliers
-            // 
+
             this.btnmanagesuppliers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmanagesuppliers.Location = new System.Drawing.Point(712, 185);
             this.btnmanagesuppliers.Name = "btnmanagesuppliers";
@@ -54,9 +48,7 @@ namespace BookHaven
             this.btnmanagesuppliers.Text = "Manage Suppliers";
             this.btnmanagesuppliers.UseVisualStyleBackColor = true;
             this.btnmanagesuppliers.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // btnmanagebooks
-            // 
+
             this.btnmanagebooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmanagebooks.Location = new System.Drawing.Point(80, 257);
             this.btnmanagebooks.Name = "btnmanagebooks";
@@ -65,9 +57,7 @@ namespace BookHaven
             this.btnmanagebooks.Text = "Manage Books";
             this.btnmanagebooks.UseVisualStyleBackColor = true;
             this.btnmanagebooks.Click += new System.EventHandler(this.button4_Click_1);
-            // 
-            // btnmanageorders
-            // 
+
             this.btnmanageorders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmanageorders.Location = new System.Drawing.Point(395, 257);
             this.btnmanageorders.Name = "btnmanageorders";
@@ -76,9 +66,7 @@ namespace BookHaven
             this.btnmanageorders.Text = "Manage Orders";
             this.btnmanageorders.UseVisualStyleBackColor = true;
             this.btnmanageorders.Click += new System.EventHandler(this.button5_Click_1);
-            // 
-            // btnviewreports
-            // 
+
             this.btnviewreports.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnviewreports.Location = new System.Drawing.Point(712, 257);
             this.btnviewreports.Name = "btnviewreports";
@@ -87,9 +75,7 @@ namespace BookHaven
             this.btnviewreports.Text = "View Reports";
             this.btnviewreports.UseVisualStyleBackColor = true;
             this.btnviewreports.Click += new System.EventHandler(this.button6_Click_1);
-            // 
-            // btninventory
-            // 
+
             this.btninventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninventory.Location = new System.Drawing.Point(395, 324);
             this.btninventory.Name = "btninventory";
@@ -98,9 +84,7 @@ namespace BookHaven
             this.btninventory.Text = "Inventory";
             this.btninventory.UseVisualStyleBackColor = true;
             this.btninventory.Click += new System.EventHandler(this.button7_Click_1);
-            // 
-            // btnlogout
-            // 
+
             this.btnlogout.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnlogout.ForeColor = System.Drawing.SystemColors.Control;
             this.btnlogout.Location = new System.Drawing.Point(952, 384);
@@ -110,9 +94,7 @@ namespace BookHaven
             this.btnlogout.Text = "Logout";
             this.btnlogout.UseVisualStyleBackColor = false;
             this.btnlogout.Click += new System.EventHandler(this.button8_Click_1);
-            // 
-            // AdminDashboard
-            // 
+
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1064, 450);
             this.Controls.Add(this.btnlogout);
@@ -140,7 +122,6 @@ namespace BookHaven
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            // to get manage users form
             ManageUsers ManageUsersForm = new ManageUsers();
             ManageUsersForm.Show();
             this.Close();
@@ -148,7 +129,6 @@ namespace BookHaven
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            //to get manage customers form
             ManageCustomers ManageCustomersForm = new ManageCustomers();
             ManageCustomersForm.Show();
             this.Close();
@@ -157,7 +137,6 @@ namespace BookHaven
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            //to get manage books form
             ManageBooks ManageBookForm = new ManageBooks();
             ManageBookForm.Show();
             this.Close();
@@ -165,7 +144,6 @@ namespace BookHaven
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            //to get manage suppliers form
             ManageSuppliers ManageSuppliersForm = new ManageSuppliers();
             ManageSuppliersForm.Show();
             this.Close();
@@ -173,7 +151,6 @@ namespace BookHaven
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            //to get manage orders form
             ManageOrders ManageOrdersForm = new ManageOrders();
             ManageOrdersForm.Show();
             this.Close();
@@ -181,7 +158,6 @@ namespace BookHaven
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            //to get view reports form
             ViewReports ViewReportsForm = new ViewReports();
             ViewReportsForm.Show();
             this.Close();
@@ -189,7 +165,6 @@ namespace BookHaven
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            //to get inventory form
             Inventory InventoryForm = new Inventory();
             InventoryForm.Show();
             this.Close();
@@ -197,11 +172,11 @@ namespace BookHaven
 
         private void button8_Click_1(object sender, EventArgs e)
         {
-            //to get login form
             Login LoginForm = new Login();
             LoginForm.Show();
             this.Close();
         }
     }
 }
+
 
