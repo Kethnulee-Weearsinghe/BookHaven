@@ -21,7 +21,6 @@ namespace BookHaven
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            //add button
             try
             {
                 using (SqlConnection con = new SqlConnection(@"Data Source=KETHNULEE;Initial Catalog=BookHaven;Integrated Security=True"))
@@ -52,7 +51,6 @@ namespace BookHaven
 
         private void btnupdate_Click(object sender, EventArgs e)
         {
-            //update button
             if (txtbookid.Text == "")
             {
                 MessageBox.Show("Please select a book to update.");
@@ -97,7 +95,6 @@ namespace BookHaven
 
         private void btndelete_Click(object sender, EventArgs e)
         {
-            //delete button
             if (txtbookid.Text == "")
             {
                 MessageBox.Show("Please select a book to delete.");
@@ -138,7 +135,6 @@ namespace BookHaven
 
         private void btnclear_Click(object sender, EventArgs e)
         {
-            //to clear textboxes
             txtbookid.Clear();
             txtbooktitle.Clear();
             cmbtitle.SelectedIndex = -1;
@@ -153,7 +149,6 @@ namespace BookHaven
 
         private void btnback_Click(object sender, EventArgs e)
         {
-            //to get admin dashbaord
             AdminDashboard admindashboard = new AdminDashboard();
             admindashboard.Show();
             this.Close();
@@ -161,7 +156,6 @@ namespace BookHaven
 
         private void btnsearch_Click(object sender, EventArgs e)
         {
-            //to load the data on datagridview
             using (SqlConnection conn = new SqlConnection(@"Data Source=KETHNULEE;Initial Catalog=BookHaven;Integrated Security=True"))
             {
                 string query = "SELECT * FROM Book WHERE BookTitle LIKE @Search OR FirstName + ' ' + LastName LIKE @Search OR ISBN LIKE @Search";
@@ -197,3 +191,4 @@ namespace BookHaven
         }
     }
 }
+
