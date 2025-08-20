@@ -19,7 +19,6 @@ namespace BookHaven
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //to get admin dashboard
             AdminDashboard AdminDashboardForm = new AdminDashboard();
             AdminDashboardForm.Show();
             this.Close();
@@ -27,7 +26,6 @@ namespace BookHaven
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            //add button
             try
             {
                 using (SqlConnection con = new SqlConnection(@"Data Source=KETHNULEE;Initial Catalog=BookHaven;Integrated Security=True"))
@@ -59,7 +57,6 @@ namespace BookHaven
 
         private void btnupdate_Click(object sender, EventArgs e)
         {
-            //update button
             if (txtsupplierid.Text == "")
             {
                 MessageBox.Show("Please select a supplier to update.");
@@ -104,7 +101,6 @@ namespace BookHaven
 
         private void btndelete_Click(object sender, EventArgs e)
         {
-            //delete button
             if (txtsupplierid.Text == "")
             {
                 MessageBox.Show("Please select a supplier to delete.");
@@ -145,7 +141,6 @@ namespace BookHaven
 
         private void btnclear_Click(object sender, EventArgs e)
         {
-            //to clear textboxes
             txtsupplierid.Clear();
             txtsuppliernic.Clear();
             cmbtitle.SelectedIndex = -1;
@@ -167,3 +162,4 @@ namespace BookHaven
 
     }
 }
+
