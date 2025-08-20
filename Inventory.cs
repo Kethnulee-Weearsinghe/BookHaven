@@ -21,7 +21,6 @@ namespace BookHaven
 
         private void btnrecord_Click(object sender, EventArgs e)
         {
-            //record button
             try
             {
                 using (SqlConnection con = new SqlConnection(@"Data Source=KETHNULEE;Initial Catalog=BookHaven;Integrated Security=True"))
@@ -47,7 +46,6 @@ namespace BookHaven
         private void btnupdate_Click(object sender, EventArgs e)
 
         {
-            //update button
             if (txtinventoryid.Text == "")
             {
                 MessageBox.Show("Please select an inventory to update.");
@@ -99,6 +97,7 @@ namespace BookHaven
      
     }
 }
+
 
 
 
