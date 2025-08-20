@@ -35,7 +35,6 @@ namespace BookHaven
                         {
                             string role = result.ToString();
 
-                            //to get message box if login credentials correct
                             MessageBox.Show("Login successful!" + role);
                             if (role.Trim().ToLower() == "admin")
                             {
@@ -53,14 +52,12 @@ namespace BookHaven
                         }
                         else
                         {
-                            //to get message box if login credentials wrong
                             MessageBox.Show("Invalid username or password.");
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    //to get message box for login fails
                     MessageBox.Show("Login failed:\n" + ex.Message);
                 }
             }
@@ -70,5 +67,6 @@ namespace BookHaven
     }
 
 }
+
 
 
